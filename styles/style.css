@@ -16,7 +16,8 @@
     display: flex;
 }
 
-.navbar, .podcast-container, .counters-container{
+.navbar, .podcast-container, .counters-container,
+.choose-title, .choose-content {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -196,6 +197,55 @@ nav{
 .counter-text{
     line-height: 20px;
 
+}
+
+.whyChoose{
+    background-color: #230E3D;
+    padding: 120px 0;
+    
+}
+
+.choose-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.choose-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 225px) 280px;
+    gap: 30px;
+    margin-top: 40px;
+    /* border: 1px solid white; */
+}
+.why-card{
+    background-color: rgba(54, 21, 100, 0.4);
+    padding: 40px;
+    /* border: 1px solid red; */
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.card-description{
+    margin-top: 20px;
+    line-height: 24px;
+}
+.big-card{
+    grid-column: span 1;
+    grid-row: span 2;
+    
+}
+.wide-card{
+    grid-column: span 2;
+    grid-row: span 1;
 }
 
 
