@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    /* background-color: #1A0B2E; */
+    color: #FFFFFF;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* shared styles */
+
+.display-flex{
+    display: flex;
+}
+
+.section, .navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 13px 18px;
+    border-radius: 10000px;
+    background-color: #9417ec;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* common color */
+
+
+/* Others styles */
+
+/* navber designed */
+
+nav{
+    border-bottom: 1px solid rgba(36, 33, 33, 1);
+    padding: 24px;
+    background-color: #1A0B2E;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.logo{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 300;
+}
+#wave{
+    color: #9100F8;
+}
+
+
+.menu ul{
+    list-style: none;
+    gap: 30px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+.menu ul li a:hover{
+    color: #9100F8;
+}
+.primary-btn .btn:hover{
+    background-color: rgb(175, 175, 49);
+}
+
+
+/* hero section */
+.bannar{
+    background-color: #1A0B2E;
+    
+    
+}
+.hero-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url(../assets/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.techwave{
+    
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+
+.hero-circle{
+
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.hero-content{
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+.hero-title{
+    font-size: 3.8rem;
+    font-weight: 800;
+}
+
+.hero-btn{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+#btn-1:hover{
+    background-color: #1A0B2E;
+    border: 1px solid #FFFFFF;
+}
+#btn-2{
+    border: 1px solid #00FF88;
+    background-color: #1A0B2E;
+    color: #00FF88;
+}
+
+#btn-2:hover{
+    background-color: #00FF88;
+    color: #FFFFFF;
+
+    
+}
+
+
+/* @media screen and (max-width:576px) {
+    nav{
+         padding: 10px;
+    }
+    
+} */
