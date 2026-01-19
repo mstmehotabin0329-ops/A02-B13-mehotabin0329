@@ -167,12 +167,14 @@ nav{
     margin-top: 40px;
 }
 
-
+#btn-1{
+    gap: 8px;
+}
 #btn-1:hover{
     background-color: #1A0B2E;
     border: 1px solid #FFFFFF;
     background-image: none;
-    color: #00FF88;
+    
 }
 #btn-2{
     border: 1px solid #00FF88;
@@ -223,7 +225,7 @@ nav{
 }
 .counter-title{
     font-size: 3rem;
-    font-weight: black;
+    font-weight: 900;
     color: #00FF88;
 }
 .counter-text{
