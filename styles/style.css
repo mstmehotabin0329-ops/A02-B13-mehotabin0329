@@ -3,8 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    /* background-color: #1A0B2E; */
+    
     color: #FFFFFF;
+}
+body{
+    background-color: #201043;
 }
 
 
@@ -60,6 +63,9 @@
 /* End Animation style */
 
 /* Others styles */
+header{
+    background-color: #1A0B2E;
+}
 
 /* navber designed */
 
@@ -108,17 +114,18 @@ nav{
 
 /* hero section */
 .bannar{
-    background-color: #1A0B2E;
-    
-    
-}
-.hero-container{
-    padding-top: 100px;
-    padding-bottom: 100px;
     background: url(../assets/hero-bg.png);
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 1600px;
     
+}
+.hero-container{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
 }
 .techwave{ 
     flex-direction: column;
@@ -157,7 +164,7 @@ nav{
 .hero-content{
     max-width: 550px;
     margin: 0 auto;
-    padding: 5px;
+    padding-top: 10px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
 }
@@ -201,10 +208,11 @@ nav{
 
 .about-section{
     background-color: #1A0B2E;
+    padding-top: 50px;
 }
 .podcast-container{
     text-align: center;
-    padding-top: 50px;
+
 }
 
 .podcast-description{
@@ -400,13 +408,14 @@ nav{
     background-image: url(../assets/footer-bg.png);
     background-position: center;
     background-repeat: no-repeat;
-    
+    width: 100%;
     padding: 120px 0;
 }
 .footer-container{
-    max-width: 600px;
+    max-width: 550px;
     margin: 0 auto;
     text-align: center;
+    
 }
 .footer-title{
     color: #FFFFFF;
@@ -420,13 +429,15 @@ nav{
 }
 
 .platform-container{
-    justify-content: space-around;
+    gap: 30px;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 35px;
 }
 .platform{
     display: flex;
-    gap: 10px;
+    gap: 8px;
 }
 
 .span-text{
@@ -435,6 +446,9 @@ nav{
 
 .copyright{
     margin-top: 32px;
+    max-width: 1360px;
+    text-align: center;
+    
 }
 .copyright .copy{
     color: rgb(194, 182, 182);
@@ -447,16 +461,19 @@ nav{
 
 
 @media screen and (max-width:576px) {
-    
-    .podcast-container, .counters-container, {
+    /* start responsive shared styles */
+    .podcast-container, .counters-container,  .feature-card, .host-box {
         width: 90%;
     }
     
-    .podcast-container, .counters-container, .whyChoose, .feature-section {
+    .podcast-container, .counters-container, .whyChoose, .feature-section, .host-section {
         padding-top: 40px;
     }
 
-
+    .feature-card-info, .host-box, .techwave {
+        flex-direction: column;
+    }
+    /* end responsive shared styles */
     .navbar{
         flex-direction: row;
 
@@ -470,6 +487,58 @@ nav{
     .hamburger-menu{
         display: block;  
     }
+
+
+    /* responsive bannar styles */
+    .bannar{
+       width: 100%;
+       background-size: cover;
+    }
+    .techwave{
+        align-items: center;
+        text-align: center;
+
+    }
+    
+    .hero-container {
+        padding: 40px 20px;
+        
+    }
+    
+    .hero-circle {
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .circle-bg img{
+        height: 300px;
+        width: 300px;
+    }
+    .new {
+    position: relative;
+        left: 85px;
+        top: 35px;
+    }
+    .microphone img{
+        height: 130px;
+    }
+    .microphone {
+        position: relative;
+        bottom: 220px;
+        left: 0px;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    .hero-btn{
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+    }
+
+
+
     .about-section{
         display: block;
         width: 100%;
@@ -515,17 +584,46 @@ nav{
     }
 
     .feature-card-info {
-        flex-direction: column;
         gap: 16px;
-    }
-
-    .feature-card{
-        width: 100%;
+        align-items: center;
         
     }
 
     .feature-cd-video iframe {
         width: 100%;
+    }
+    .host-section{
+        padding-bottom: 40px;
+    }
+
+    .host-title{
+        margin-bottom: 24px;
+    }
+    .host-box{
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+    .socialmedia-icon ul{
+        justify-content: center;
+    }
+
+    .footer-section {
+        background-size: 130%;
+        padding: 40px 0;
+        /* width: 100%; */
+        
+    }
+    .footer-container {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .platform-container{
+        gap: 15px;
+        font-size: 1rem;
     }
 
 
