@@ -52,12 +52,18 @@ body{
 
 
 /* Start Animation style  */
-
-@keyframes  {
-    
-}
-.counters-containe{
-    
+@keyframes text-ani {
+    from{
+        left: 0;
+    }
+    to{
+        left: 30px;
+        color: #44a098;
+    }
+} 
+.hero-title{
+    position: relative;
+    animation: text-ani 2s ease-in-out 1s infinite alternate;
 }
 
 /* End Animation style */
